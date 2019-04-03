@@ -29,7 +29,7 @@ public class YamlBug {
     StreamReader sreader = new StreamReader(new UnicodeReader(yamlStream));
     Composer composer = new Composer(new ParserImpl(sreader), new Resolver());
     Node rootNode = composer.getSingleNode();
-    System.out.println(rootNode);
+
     SequenceNode nodeList = (SequenceNode) rootNode;
     MappingNode node_1 = (MappingNode) nodeList.getValue().get(0);
     MappingNode node_2 = (MappingNode) nodeList.getValue().get(1);
