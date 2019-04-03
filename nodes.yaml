@@ -1,0 +1,21 @@
+- node_1:
+    properties: &node_1_prop
+      role: management
+      layer: 1
+
+- node_2:
+    properties:
+      level:  24
+      <<: *node_1_prop
+
+
+#Original
+#- node_1:
+#    properties: &node_1_prop
+#      role: management
+#      layer: 1
+#
+#- node_2:
+#    properties:
+#      level:  24
+#      <<: *node_1_prop
